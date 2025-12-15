@@ -1,1 +1,12 @@
+DNS Lookup utility
 
+dig @server name type
+
+server
+The name or IP address of the name server to query. This can be an IPv4 address in dotted-decimal notation or an IPv6 address in colon-delimited notation. When the supplied server argument is a hostname, the dig command resolves that name before querying that name server. If no server argument is provided, the dig command consults the /etc/resolv.conf file and queries the name servers listed there. The reply from the name server that responds is displayed.
+
+name
+The name of the resource record that is to be looked up.
+
+type
+Indicates what type of query is required — ANY, A, MX, SIG, and so on. The type argument value can be any valid query type. If no type argument is supplied, the dig command performs a lookup for an A record.
