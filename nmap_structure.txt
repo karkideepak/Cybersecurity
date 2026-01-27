@@ -38,4 +38,10 @@ nmap [SCAN TYPE] [OPTIONS] [TARGET]
 | `-T5`  | Insane      | Very fast, very loud | Labs only           |
 
 
+| Option  | Name             | Purpose                 | Notes                   |
+| ------- | ---------------- | ----------------------- | ----------------------- |
+| `-f`    | Fragment Packets | Tests packet reassembly | IDS/firewall validation |
+| `--mtu` | Custom MTU       | Adjust packet size      | Advanced evasion        |
+| `-Pn`   | No Ping          | Skip host discovery     | When ICMP is blocked    |
+
 
