@@ -6,3 +6,12 @@ nmap [SCAN TYPE] [OPTIONS] [TARGET]
 | `-sU`  | UDP Scan         | Scans UDP-based services                | Find overlooked services (DNS, SNMP)       |
 | `-sn`  | Ping Scan        | Detects live hosts only (no ports)      | Initial host discovery                     |
 | `-sA`  | TCP ACK Scan     | Tests firewall rule behavior            | Firewall validation                        |
+
+
+| Option            | Meaning             | Example           | Notes                |
+| ----------------- | ------------------- | ----------------- | -------------------- |
+| Default           | Top 1000 TCP ports  | `nmap target`     | Common services only |
+| `-p-`             | All ports (1–65535) | `-p-`             | Full exposure check  |
+| `-p 22,80,443`    | Specific ports      | `-p 22,80,443`    | Targeted testing     |
+| `-p 1-1024`       | Port range          | `-p 1-1024`       | Well-known ports     |
+| `--top-ports 100` | Most common ports   | `--top-ports 100` | Faster coverage      |
