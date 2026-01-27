@@ -22,3 +22,12 @@ nmap [SCAN TYPE] [OPTIONS] [TARGET]
 | `-O`   | OS Detection              | Fingerprints operating system       | Probabilistic        |
 | `-A`   | Aggressive Scan           | `-sV` + `-O` + scripts + traceroute | Noisy, use carefully |
 
+| Option               | Script Category | Purpose              | Risk Level |
+| -------------------- | --------------- | -------------------- | ---------- |
+| `--script safe`      | Safe            | Non-intrusive checks | Low        |
+| `--script vuln`      | Vulnerability   | Detect known vulns   | Medium     |
+| `--script auth`      | Authentication  | Auth-related checks  | Medium     |
+| `--script discovery` | Discovery       | Info gathering       | Low        |
+| `--script http-*`    | HTTP Scripts    | Web service analysis | Low–Medium |
+
+
