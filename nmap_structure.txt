@@ -52,5 +52,24 @@ nmap [SCAN TYPE] [OPTIONS] [TARGET]
 | `-oG`  | Grepable    | `.gnmap`    | Parsing            |
 | `-oA`  | All formats | All above   | Reporting & audits |
 
+| Option | Requires Root/Admin? | Reason                   |
+| ------ | -------------------- | ------------------------ |
+| `-sS`  | Yes                  | Raw packet crafting      |
+| `-O`   | Yes                  | Low-level fingerprinting |
+| `-sU`  | Yes                  | Raw UDP packets          |
+| `-sT`  | No                   | OS handles TCP           |
+| `-sn`  | No                   | ICMP only                |
+
+
+| Goal            | Command                         | Explanation       |
+| --------------- | ------------------------------- | ----------------- |
+| Host discovery  | `nmap -sn 192.168.1.0/24`       | Find live systems |
+| Quick exposure  | `nmap -sS target`               | Common ports      |
+| Full TCP scan   | `nmap -sS -p- target`           | All ports         |
+| Service mapping | `nmap -sS -sV target`           | Identify services |
+| Safe vuln check | `nmap -sS --script safe target` | Non-intrusive     |
+
+
+
 
 
