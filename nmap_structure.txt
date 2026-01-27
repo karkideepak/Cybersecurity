@@ -45,3 +45,12 @@ nmap [SCAN TYPE] [OPTIONS] [TARGET]
 | `-Pn`   | No Ping          | Skip host discovery     | When ICMP is blocked    |
 
 
+| Option | Output Type | File Format | Use Case           |
+| ------ | ----------- | ----------- | ------------------ |
+| `-oN`  | Normal      | `.txt`      | Human-readable     |
+| `-oX`  | XML         | `.xml`      | Tool ingestion     |
+| `-oG`  | Grepable    | `.gnmap`    | Parsing            |
+| `-oA`  | All formats | All above   | Reporting & audits |
+
+
+
