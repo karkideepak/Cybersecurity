@@ -30,4 +30,12 @@ nmap [SCAN TYPE] [OPTIONS] [TARGET]
 | `--script discovery` | Discovery       | Info gathering       | Low        |
 | `--script http-*`    | HTTP Scripts    | Web service analysis | Low–Medium |
 
+| Option | Speed Level | Description          | Use Case            |
+| ------ | ----------- | -------------------- | ------------------- |
+| `-T0`  | Paranoid    | Very slow, stealthy  | IDS evasion testing |
+| `-T3`  | Normal      | Balanced (default)   | Most assessments    |
+| `-T4`  | Aggressive  | Faster, more noise   | Internal networks   |
+| `-T5`  | Insane      | Very fast, very loud | Labs only           |
+
+
 
