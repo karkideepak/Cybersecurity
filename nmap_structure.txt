@@ -1,0 +1,8 @@
+nmap [SCAN TYPE] [OPTIONS] [TARGET]
+| Option | Full Name        | What It Does                            | When to Use                                |
+| ------ | ---------------- | --------------------------------------- | ------------------------------------------ |
+| `-sS`  | TCP SYN Scan     | Sends SYN packets only (half-open scan) | Default professional scan (fast, stealthy) |
+| `-sT`  | TCP Connect Scan | Completes full TCP handshake            | When running without root/admin            |
+| `-sU`  | UDP Scan         | Scans UDP-based services                | Find overlooked services (DNS, SNMP)       |
+| `-sn`  | Ping Scan        | Detects live hosts only (no ports)      | Initial host discovery                     |
+| `-sA`  | TCP ACK Scan     | Tests firewall rule behavior            | Firewall validation                        |
