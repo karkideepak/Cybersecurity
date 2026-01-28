@@ -1,1 +1,4 @@
-
+dig example .com MX for mail servers
+dig example .com A for IPv4 addresses
+dig example .com AAAA for IPv6 addresses
+dig example .com NS for name servers
