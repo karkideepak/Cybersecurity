@@ -1,0 +1,1 @@
+Fierce is a DNS reconnaissance tool that is equipped to discover subdomains and NS records. The tool’s –wide option allows Fierce to extend the scan to include all IPs in the /24 subnet of a discovered domain, which can unveil additional domains.
