@@ -1,0 +1,16 @@
+DNSRecon can perform standard queries to enumerate DNS records such as:
+A
+AAAA
+MX
+SOA
+NS
+SPF
+TXT
+It can also check DNS server cache records along with wildcard resolution and SRV records.
+
+DNSRecon provides versatile reporting in a variety of file formats including:
+text
+SQLite
+XML
+CSV
+JSON
