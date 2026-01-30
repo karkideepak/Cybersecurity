@@ -1,8 +1,5 @@
-#See running processes
-#Spot suspicious processes, odd names, LOLbins
 tasklist
-
-#Confirm user context and machine identity during incidents
-whoami
-hostname
-
+# Shows all running processes on the system
+# Blue team use:
+# - Look for strange process names
+# - Identify malware pretending to be legit (e.g. svch0st.exe)
