@@ -1,0 +1,3 @@
+journalctl -xe
+# Shows detailed error logs
+# Great for troubleshooting suspicious behavior
