@@ -1,0 +1,5 @@
+tcpdump -i eth0
+# Captures live network traffic
+# Blue team use:
+# - Detect command-and-control (C2)
+# - Capture evidence during an attack
