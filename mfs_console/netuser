@@ -1,0 +1,3 @@
+net user
+# Lists all local user accounts
+# Look for unauthorized or newly created users
