@@ -1,0 +1,3 @@
+ip addr
+# Linux: Shows network interfaces and IPs
+# Useful for detecting misconfigurations or attackers pivoting
