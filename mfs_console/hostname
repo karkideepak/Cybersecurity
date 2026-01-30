@@ -1,0 +1,3 @@
+hostname
+# Displays the computer name
+# Useful when handling multiple machines in an incident
