@@ -1,0 +1,6 @@
+Get-WinEvent -LogName Security -MaxEvents 50
+# Displays recent security events
+# Look for:
+# - Failed logins
+# - Privilege escalation
+# - Suspicious process creation
