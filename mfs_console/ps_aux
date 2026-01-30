@@ -1,0 +1,4 @@
+ps aux
+# Lists all running processes
+# Blue team use:
+# - Spot crypto miners, reverse shells, suspicious commands
