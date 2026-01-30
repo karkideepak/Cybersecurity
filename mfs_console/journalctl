@@ -1,0 +1,3 @@
+journalctl
+# Shows system logs
+# Useful for service failures or crashes caused by attackers
