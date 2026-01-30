@@ -1,0 +1,5 @@
+netstat -ano
+# Shows network connections and owning process IDs
+# Blue team use:
+# - Detect suspicious outbound connections
+# - Match PID to malicious process
