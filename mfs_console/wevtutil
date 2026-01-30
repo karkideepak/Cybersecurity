@@ -1,0 +1,3 @@
+wevtutil el
+# Lists all available Windows event logs
+# Helps analysts know where to look for evidence
