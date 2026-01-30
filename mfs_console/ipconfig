@@ -1,0 +1,5 @@
+ipconfig /all
+# Windows: Shows IP address, DNS, gateway
+# Look for:
+# - Rogue DNS servers
+# - Unexpected IP changes
