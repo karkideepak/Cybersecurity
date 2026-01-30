@@ -1,0 +1,8 @@
+hashfile suspicious.exe SHA256
+# Generates file hash (Windows)
+# Used to:
+# - Compare with known malware hashes
+# - Share with threat intel teams
+
+sha256sum suspicious_file
+# Linux version of file hashing
