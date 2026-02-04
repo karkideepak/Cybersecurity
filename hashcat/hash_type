@@ -1,0 +1,4 @@
+-m <hash_id>
+
+list all supported hash IDs:
+hashcat --help | grep -i hash-mode
