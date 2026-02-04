@@ -1,0 +1,4 @@
+hashcat --help
+hashcat --version
+hashcat --benchmark
+hashcat --backend-info
