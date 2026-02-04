@@ -1,0 +1,1 @@
+hashcat [options]... hashfile [wordlists/masks/rules...]
