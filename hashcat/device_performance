@@ -1,0 +1,6 @@
+-d — select devices (GPU/CPU)
+--backend-info — list GPU/CPU capabilities
+--workload-profile — low/medium/high compute intensity
+--force — bypass safety checks (not recommended)
+--optimized-kernel-enable — faster but limited kernel types
+--status and --status-timer — periodic status reporting
