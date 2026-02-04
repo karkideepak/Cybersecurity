@@ -1,0 +1,10 @@
+-a <attack_mode>
+  Common attack mode categories:
+
+Straight mode — wordlist-based auditing
+Combination mode — combining two wordlists
+Brute‑force / mask‑based — patterned keyspace analysis
+Rule‑based mode — applies mutation rules to candidate passwords
+Hybrid modes — mixes masks and wordlists
+Association-based — guess-based on known structures
+  
