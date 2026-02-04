@@ -1,0 +1,6 @@
+These options help validate and analyze test results:
+
+--show — display previously recovered entries
+--left — list unmatched entries
+--stdout — output generated candidate strings
+--benchmark — run performance benchmarks
