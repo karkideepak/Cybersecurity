@@ -1,0 +1,6 @@
+--outfile — write audit results to a file
+--outfile-format — choose fields (hash, password, time)
+--session — save sessions for pausing/resuming
+--restore / --restore-file-path — resume paused audits
+--separator — custom delimiter for hash formats
+--username — ignore usernames in hash files
