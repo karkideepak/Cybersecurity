@@ -1,0 +1,4 @@
+Mimikatz is a well-known post-exploitation tool used to extract credentials from Windows systems, primarily from memory. It’s heavily used by attackers after they already have access to a machine.
+For defenders, Mimikatz is important because:
+It targets LSASS (Local Security Authority Subsystem Service)
+It enables credential theft, lateral movement, and privilege escalation
