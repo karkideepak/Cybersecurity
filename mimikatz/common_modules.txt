@@ -1,0 +1,11 @@
+sekurlsa → Credential extraction from LSASS
+
+logonpasswords → Attempts to dump credentials of logged-in users
+
+lsadump → Domain credential access
+
+kerberos → Ticket extraction / abuse
+
+pth (pass-the-hash) related activity
+
+privilege → Attempts to enable debug privileges
