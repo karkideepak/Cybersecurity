@@ -1,0 +1,9 @@
+Windows Event Logs
+
+Event ID 4672 – Special privileges assigned
+
+Event ID 4688 – Suspicious process creation
+
+Event ID 4624 – Unusual logon patterns (especially lateral movement)
+
+Event ID 10 (Sysmon) – Process accessing LSASS
