@@ -1,0 +1,6 @@
+Command,What it does,Common usage
+sessions,List all active sessions,sessions or sessions -l
+sessions -i 1,Interact with session #1,Most used command after exploit
+sessions -u 1,Upgrade shell → Meterpreter (if possible),Very handy
+sessions -k 1,Kill session #1,Clean up
+sessions -K,Kill all sessions,When finished
