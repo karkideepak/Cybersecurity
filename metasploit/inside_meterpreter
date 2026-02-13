@@ -1,0 +1,5 @@
+sysinfo
+getuid
+shell
+screenshot
+keyscan_start    # then keyscan_dump later
