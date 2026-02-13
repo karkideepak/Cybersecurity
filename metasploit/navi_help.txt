@@ -1,0 +1,13 @@
+Command,What it does,Example
+help,Shows all available commands + short description,help
+?,Same as help (shorter),?
+banner,Shows the random Metasploit banner again,banner
+exit / quit,Close Metasploit,exit
+back,Go back one level (very important!),back
+previous,Return to the previously used module,previous
+
+Command,Purpose,Popular examples
+search <keyword>,Find exploits/auxiliaries/payloads,"search eternalblue
+search smb version:2"
+search type:exploit cve:2023,More precise search,search type:auxiliary scanner
+search apache score:excellent,Filter by quality ranking,—
