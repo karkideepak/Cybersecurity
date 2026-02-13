@@ -16,3 +16,13 @@ msfconsole
 
 # Quiet + fast start (recommended)
 msfconsole -q
+
+Most Important Basic Workflow (remember these 8 steps)
+
+Search for a module
+search eternalbluesearch type:exploit cve:2021search smb version:3
+Select module
+use 0 ← picks first result
+use exploit/windows/smb/ms17_010_eternalblue
+See what you need to setshow optionsshow payloadsshow targets
+Set required fields (almost always needed)
