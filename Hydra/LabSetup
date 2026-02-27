@@ -75,3 +75,11 @@ hydra -l ftpuser -P ftp_pass.txt -t 20 ftp://192.168.56.20
 
 7.
 Common Problems
+Problems on Windows XP + Hydra in 2026
+
+RDP → only 1 thread usually works (XP locks account fast)
+SMB → sometimes needs smb2 module on newer Hydra
+Encoding problems → add -S for SSL (rare on XP)
+Firewall / NAT → make sure ports are reachable (nmap -p 3389,445 192.168.56.20)
+Account lockout → XP default is often 0 (no lock), but check
+
