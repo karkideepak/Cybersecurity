@@ -15,3 +15,37 @@ Target machine    →  Windows XP SP3                     192.168.56.20
 |HTTP auth|80|http-get
 
 3. Install Hydra on Linux
+# Kali / Parrot 
+sudo apt update
+sudo apt install hydra
+
+# Check version
+hydra -h | head
+
+# Or compile fresh from github 
+git clone https://github.com/vanhauser-thc/thc-hydra
+cd thc-hydra
+./configure
+make
+sudo make install
+
+4.
+Prepare wordlist
+# Very small for quick demo (create yourself)
+echo -e "password\nadmin\n123456\nxp123\nletmein\nsecret" > xp_passwords.txt
+
+# Common old lists (Kali has them)
+ls /usr/share/wordlists/
+rockyou.txt.gz          → gunzip first if needed
+dirb/common.txt
+metasploit/passwords.txt
+seclists/Passwords/...
+
+# Good realistic XP passwords 2005-2010 era
+curl https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt -o big.txt
+
+-l       = single known username
+-P       = password file
+-t 1     = very important — only 1 thread (RDP on XP locks / slows down with many threads)
+-V       = verbose → shows every try (great for learning)
+rdp://IP = protocol + target
