@@ -1,5 +1,17 @@
+1. 
 Both VMs on Host-Only or Internal Network adapter (never bridge/NAT to real internet)
 Windows XP firewall off during tests (or allow the ports)
 
 Attacker machine  →  Kali Linux 2025                    192.168.56.10
 Target machine    →  Windows XP SP3                     192.168.56.20
+
+2. 
+|Service|Port|Module
+|-|-|
+|RDP|3389|rdp|
+|SMB|445|smb/smb2|
+|Telnet|23|telnet|
+|FTP|21|ftp|
+|HTTP auth|80|http-get
+
+3. Install Hydra on Linux
