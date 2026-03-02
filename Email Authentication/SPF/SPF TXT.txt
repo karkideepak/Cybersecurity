@@ -1,0 +1,10 @@
+The basic syntax of the SPF TXT record for a custom domain in Microsoft 365 is:
+v=spf1 <valid mail sources> <enforcement rule>
+
+v=spf1 [<ip4>|<ip6>:<PublicIPAddress1> 
+<ip4>|<ip6>:<PublicIPAddress2>... 
+<ip4>|<ip6>:<PublicIPAddressN>] 
+[include:<DomainName1> 
+include:<DomainName1>... 
+include:<DomainNameN>] 
+<-all | ~all>
