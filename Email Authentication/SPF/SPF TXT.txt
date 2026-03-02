@@ -8,3 +8,21 @@ v=spf1 [<ip4>|<ip6>:<PublicIPAddress1>
 include:<DomainName1>... 
 include:<DomainNameN>] 
 <-all | ~all>
+
+
+v=spf1 identifies the TXT record as an SPF TXT record.
+valid mail sources: Specified valid sources of mail for the domain. Uses Domains, IP addresses, or both:
+Domains: include: values specify other services or domains as valid sources of mail from the original domain. These values ultimately lead to an IP address using DNS lookups.
+
+Most Microsoft 365 organizations require include:spf.protection.outlook.com in the SPF TXT record for the domain. Other non-Microsoft email services often require an additional include: value to identify the service as a valid source of email from the original domain.
+
+IP addresses: An IP address value includes both of the following elements:
+
+The value ip4: or ip6: to identify the type of IP address.
+The publicly resolvable IP address of the source email system. For example:
+An individual IP address (for example, 192.168.0.10).
+An IP address range using Classless Inter-Domain Routing (CIDR) notation (for example 192.168.0.1/26). Be sure that the range isn't too big or too small.
+
+-all (hard fail):
+~all (soft fail): 
+?all (neutral):
