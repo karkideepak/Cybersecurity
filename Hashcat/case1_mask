@@ -1,0 +1,1 @@
+hashcat --hash-type hash_type_id --attack-mode 3 hash_value
