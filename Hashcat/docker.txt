@@ -1,0 +1,4 @@
+Install the Docker container with the following command:
+
+When the install is complete you will be presented with a prompt similar to this:
+  
