@@ -1,4 +1,6 @@
 Install the Docker container with the following command:
+docker run -t -i dizcza/docker-hashcat:intel-cpu /bin/bash
 
 When the install is complete you will be presented with a prompt similar to this:
+root@<some_container_id>:/hashcat#
   
