@@ -1,3 +1,9 @@
 Let's pretend for a moment that we were able to compromise a target machine, and pull a password hash off of the box.
-
 $5$Ebkn8jlK$i6SSPa0.u7Gd.0oJOT4T421N2OvsfXqAT1vCoYUOigB
+
+Now that we have the password hash let's put it into a file named user_password_hash using this command: 
+echo """\$5\$Ebkn8jlK\$i6SSPa0.u7Gd.0oJOT4T421N2OvsfXqAT1vCoYUOigB""" > user_password_hash
+
+the $ in the hash need to be escaped so that the bash command runs successfully.
+
+
