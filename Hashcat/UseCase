@@ -10,3 +10,12 @@ hashcat --hash-type hash_type_id --attack-mode 3 hash_value "?d?d?d?d"
 
 Explanation:
 ?d: Represents a numeric digit, from 0 to 9. The four ?d placeholders specify that you are targeting a four-digit numeric password.
+
+#printable ascii character
+hashcat --hash-type hash_type_id --attack-mode 3 --increment hash_value "?a?a?a?a?a?a?a?a"
+
+#rockyou.txt
+hashcat --hash-type hash_type_id --attack-mode 0 hash_value /usr/share/wordlists/rockyou.txt
+--attack-mode 0: Denotes a dictionary attack which involves using a list of potential passwords.
+/usr/share/wordlists/rockyou.txt: This is the path to the RockYou wordlist file, which will be used in attempts to decode the hash.
+
