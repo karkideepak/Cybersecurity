@@ -6,4 +6,9 @@ echo """\$5\$Ebkn8jlK\$i6SSPa0.u7Gd.0oJOT4T421N2OvsfXqAT1vCoYUOigB""" > user_pas
 
 the $ in the hash need to be escaped so that the bash command runs successfully.
 
+https://hashcat.net/wiki/doku.php?id=example_hashes
+7400	sha256crypt $5$, SHA256 (Unix) 2	$5$rounds=5000$GX7BopJZJxPc/KEK$le16UF8I2Anb.rOrn22AUPWvzUETDGefUmAV8AZkGcD
+
+Therefore the mode we want to use will be 7400.
+
 
