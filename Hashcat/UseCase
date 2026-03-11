@@ -1,0 +1,12 @@
+#hashcat mask
+hashcat --hash-type hash_type_id --attack-mode 3 hash_value
+
+--hash-type hash_type_id: Specifies the type of hash you are trying to crack. Each hash algorithm has a unique ID that Hashcat uses to identify what it’s working with.
+--attack-mode 3: This denotes a brute-force attack. Hashcat has several attack modes, with mode 3 being designed for brute-force.
+hash_value: The hash that you need to crack. This is the target of the brute-force attack.
+
+#brute force attack for pattern of 4 digit
+hashcat --hash-type hash_type_id --attack-mode 3 hash_value "?d?d?d?d"
+
+Explanation:
+?d: Represents a numeric digit, from 0 to 9. The four ?d placeholders specify that you are targeting a four-digit numeric password.
