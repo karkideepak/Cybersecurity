@@ -6,6 +6,7 @@ root@<some_container_id>:/hashcat#
 
 Hashcat directory:
 cd hashcat/
+root@8818baae2417:~/hashcat# 
 
 Hashcat requires a list of passwords to make comparisons against as it attempts to process the hash. One of the most popular password lists to use is called rockyou.txt
 
