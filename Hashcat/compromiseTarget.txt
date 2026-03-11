@@ -1,0 +1,3 @@
+Let's pretend for a moment that we were able to compromise a target machine, and pull a password hash off of the box.
+
+$5$Ebkn8jlK$i6SSPa0.u7Gd.0oJOT4T421N2OvsfXqAT1vCoYUOigB
