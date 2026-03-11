@@ -3,4 +3,10 @@ docker run -t -i dizcza/docker-hashcat:intel-cpu /bin/bash
 
 When the install is complete you will be presented with a prompt similar to this:
 root@<some_container_id>:/hashcat#
-  
+
+Hashcat directory:
+cd hashcat/
+
+Hashcat requires a list of passwords to make comparisons against as it attempts to process the hash. One of the most popular password lists to use is called rockyou.txt
+
+wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
