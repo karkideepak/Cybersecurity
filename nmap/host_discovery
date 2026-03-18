@@ -1,0 +1,14 @@
+target network range:
+10.129.2.0/24
+
+disable port scanning 
+-sn
+
+store the results in all formats starting with the name 'tnet':
+-oA tnet
+
+performs defined scan against targetns in the provided list
+-iL
+
+store the resuls in all formats starting the name 'host'
+  -oA host
