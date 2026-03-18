@@ -1,0 +1,11 @@
+scan all ports:
+-p-
+
+performs serrvice version detection on specified ports:
+-sV
+
+analyze network traffic by intercepting and displaying packets
+tcpdump
+
+for reading and writing data between two computer
+NC
