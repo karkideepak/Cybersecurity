@@ -1,0 +1,3 @@
+Port Selection:
+-p <range>: Specific ports (e.g., -p 1-1023, -p 80,443, -p- for all 65535).
+-F: Fast mode (100 most common ports instead of 1000).
