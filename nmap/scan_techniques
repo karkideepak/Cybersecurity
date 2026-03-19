@@ -1,0 +1,5 @@
+Scan Techniques:
+-sS: TCP SYN scan (default, fast, stealthy).
+-sT: TCP connect scan (used when user lacks raw socket privileges).
+-sU: UDP scan.
+-sF, -sN, -sX: FIN, NULL, or Xmas scans (stealthy techniques).
