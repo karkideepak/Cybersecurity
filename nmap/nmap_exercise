@@ -1,0 +1,39 @@
+#I.IV
+ping -c 4 ip.add.ress , nc ip.add.ress
+
+1. Initial scan
+nmap -n ip.add.ress1-ip.add.ress9
+Nmap cannot send ICMP packets unless it is running as root
+
+2. Scanning ip.add.ress3
+Terminal 2: new tcpdump running
+sudo tcpdump -i tun0 -nn net ip.add.ress24
+sudo vim /usr/share/namp/nmap-services
+
+Terminal1:
+sudo nmap -n -sT ip.add.ress3 -F
+sudo nmap -n -sT ip.add.ress3 --top-ports 3000
+
+3. Output format:
+sudo nmap -n -sT ip.add.ress/24 -oA /tmp/scan -F -T4
+ls -l /tmp/scan*
+less /tmp/scan.nmap OR less /tmp/scan.xml
+cat /tmp/scan.gnmap
+nmap local –top-ports 200 -oX – 
+
+4. Finding hosts by open port
+grep 389/open /tmp/scan.gnmap
+grep -w 389/open /tmp/scan.gnmap
+grep -w 445/open /tmp/scan.gnmap | wc -l
+grep -w 445/open /tmp/scan.gnmap | cut -d ' ' -f 2
+
+5. Nmap-service file
+less /usr/share/nmap/nmap-services
+
+6. UDP Scanning
+sudo nmap -n -sU ip.add.ress
+
+7. Targetted UDP Scan
+sudo nmap -n -sU ip.add.ress2,10 -p 53,111,414,500-501 --reason
+sudo nmap -n -sU ip.add.ress2,10 -p 53,111,414,500-501 --open
+sudo nmap -n -sU ip.add.ress2,10 -p 53,111,414,500-501 -- open
