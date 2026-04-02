@@ -1,1 +1,2 @@
+hydra [options] <target> <service> [service options]
 
