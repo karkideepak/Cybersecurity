@@ -1,2 +1,15 @@
 hydra [options] <target> <service> [service options]
 
+Common Command Line Options
+-l USER or -L FILE: Specify a single username or a list of usernames.
+-p PASS or -P FILE: Specify a single password or a list of passwords.
+-t TASKS: Number of parallel connections per target (default: 16).
+-f / -F: Stop on the first valid username/password pair found.
+-v / -V: Verbose mode. Shows the login/pass combinations being tried.
+-w TIME: Set the delay between connection attempts in seconds.
+-s PORT: Use a specific port instead of the default service port.
+**-S`: Use SSL for the connection.
+-R: Resume a previous, interrupted scan.
+-o FILE: Write found credentials to a file.
+-M FILE: Provide a list of target hosts for a parallel scan.
+**-U`: List all available modules (protocols
