@@ -1,0 +1,5 @@
+Key Features:
+Works on "fields" (columns) and "records" (lines).
+Supports arithmetic operations (e.g., summing a column).
+Uses "BEGIN" and "END" blocks for pre- and post-processing.
+Example: awk '{print $1, $3}' data.csv (Prints the first and third columns of a file).
