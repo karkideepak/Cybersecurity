@@ -1,0 +1,5 @@
+Key Features:
+grep -i: Case-insensitive search.
+grep -v: Inverts the match (shows lines that do not match).
+grep -r: Recursively searches through directories.
+grep -n: Displays the line number of the match.
