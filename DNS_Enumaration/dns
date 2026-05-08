@@ -1,1 +1,3 @@
 DNS (Domain Name System) is like the phonebook of the internet.
+nslookup google.com
+dig google.com
