@@ -1,0 +1,8 @@
+1. Port ScanningQuickly check which ports are open on a target IP without sending payloads.
+
+nc -zv 192.168.1.50 1-1000
+
+Send and receive files between the attacker and target machine.
+On the receiving machine (e.g., Target): 
+nc -l -p 1234 > received_file.txtOn 
+the sending machine (e.g., Attacker): nc 192.168.1.50 1234 < file_to_send.txt
