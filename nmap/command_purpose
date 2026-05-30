@@ -1,0 +1,32 @@
+| Command                                | Purpose                       |
+| -------------------------------------- | ----------------------------- |
+| `nmap -sn 10.0.0.0/24`                 | Ping sweep / host discovery   |
+| `nmap -Pn target`                      | Skip host discovery           |
+| `nmap -sS target`                      | SYN stealth scan              |
+| `nmap -sT target`                      | TCP Connect scan              |
+| `nmap -sU target`                      | UDP scan                      |
+| `nmap -p- target`                      | Scan all TCP ports            |
+| `nmap -F target`                       | Fast scan (top 100 ports)     |
+| `nmap --top-ports 1000 target`         | Scan most common 1000 ports   |
+| `nmap -sV target`                      | Service version detection     |
+| `nmap -O target`                       | OS fingerprinting             |
+| `nmap -A target`                       | Aggressive scan               |
+| `nmap -T4 target`                      | Faster timing                 |
+| `nmap -T5 target`                      | Very aggressive timing        |
+| `nmap -n target`                       | No DNS resolution             |
+| `nmap -R target`                       | Always resolve DNS            |
+| `nmap --reason target`                 | Show why ports are classified |
+| `nmap --packet-trace target`           | Display sent/received packets |
+| `nmap --traceroute target`             | Network path discovery        |
+| `nmap -6 target`                       | IPv6 scan                     |
+| `nmap -iL targets.txt`                 | Scan hosts from file          |
+| `nmap --exclude 10.0.0.5 target_range` | Exclude hosts                 |
+| `nmap -oN scan.txt target`             | Normal output                 |
+| `nmap -oX scan.xml target`             | XML output                    |
+| `nmap -oG scan.grep target`            | Grepable output               |
+| `nmap -oA report target`               | All output formats            |
+| `nmap --resume report.gnmap`           | Resume interrupted scan       |
+| `nmap --stats-every 30s target`        | Progress updates              |
+| `nmap --open target`                   | Show only open ports          |
+| `nmap -v target`                       | Verbose                       |
+| `nmap -vv target`                      | Very verbose                  |
