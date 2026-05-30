@@ -1,9 +1,9 @@
 | Command                                | Purpose                       |
 | -------------------------------------- | ----------------------------- |
-| `nmap -sn 10.0.0.0/24`                 | Ping sweep / host discovery   |
-| `nmap -Pn target`                      | Skip host discovery           |
-| `nmap -sS target`                      | SYN stealth scan              |
-| `nmap -sT target`                      | TCP Connect scan              |
+| `nmap -sn 10.0.0.0/24`                 | Ping sweep / host discovery/no port scanning   |
+| `nmap -Pn target`                      | Skip host discovery, assume host is up           |
+| `nmap -sS target`                      | SYN stealth scan , fast tcp no handshake             |
+| `nmap -sT target`                      | TCP Connect scan, full scan             |
 | `nmap -sU target`                      | UDP scan                      |
 | `nmap -p- target`                      | Scan all TCP ports            |
 | `nmap -F target`                       | Fast scan (top 100 ports)     |
@@ -30,3 +30,23 @@
 | `nmap --open target`                   | Show only open ports          |
 | `nmap -v target`                       | Verbose                       |
 | `nmap -vv target`                      | Very verbose                  |
+-PR arp ping, 
+nmap -p 22,80,443,445 scan only ports
+-sC -sV , service detection and default NSE scripts
+
+| Service            | Port |
+| ------------------ | ---- |
+| Kerberos           | 88   |
+| LDAP               | 389  |
+| LDAPS              | 636  |
+| SMB                | 445  |
+| Global Catalog     | 3268 |
+| Global Catalog SSL | 3269 |
+| DNS                | 53   |
+| RPC                | 135  |
+
+nmap --script smb-enum-shares -p445 target
+nmap --script smb-security-mode -p445 target
+nmap --script snmp-info -p161 target
+nmap --script http-enum target , enumerate dicrectoruies
+nmap -n target , disable dns 
