@@ -1,0 +1,30 @@
+Q1. What does -Pn do?
+Answer: Disables host discovery and treats all targets as online. Useful when ICMP is blocked.
+
+Q2. Why is -sS often preferred during reconnaissance?
+Answer: It performs a SYN scan that is faster and generally less likely to be logged as a full TCP connection.
+
+Q3. What is the purpose of NSE (Nmap Scripting Engine)?
+Answer: NSE automates discovery, enumeration, vulnerability detection, and service interaction using scripts.
+
+Q4. When would you use UDP scanning?
+Answer: To discover services such as DNS (53), SNMP (161), NTP (123), TFTP (69), and other UDP-based applications.
+
+Q5. What command is commonly used during enterprise enumeration?
+Answer: nmap -sC -sV -O -Pn target because it combines service detection, default scripts, and OS fingerprinting.
+
+Q6. How do you scan an entire enterprise subnet for web servers?
+Answer: nmap -p80,443,8080,8443 10.10.0.0/16
+
+Q7. How can you identify domain controllers?
+Answer: Scan for ports such as 88, 389, 445, 636, and 3268:
+nmap -p 88,389,445,636,3268 10.10.1.0/24
+  
+Q8. How do you enumerate SMB information?
+Answer: nmap --script smb-os-discovery,smb-enum-users -p445 target
+
+Q9. How do you detect anonymous FTP access?
+Answer: nmap --script ftp-anon -p21 target
+  
+Q10. How do you identify SQL Server instances?
+Answer: nmap -sU -p1434 --script ms-sql-info target
