@@ -10,3 +10,41 @@ Web Enumeration
 nmap -p80,443 -sV --script http-enum,http-title target
 SSL Assessment
 nmap --script ssl-cert,ssl-enum-ciphers -p443 target
+
+This is often the first scan against a known live host because it quickly identifies common services without waiting for a full 65,535-port scan.
+
+Example Output
+
+You might discover:
+
+22 SSH
+80 HTTP
+443 HTTPS
+445 SMB
+3389 RDP
+
+nmap -Pn -n -T4 --top-ports 1000 target
+
+| Option | Meaning                      |
+| ------ | ---------------------------- |
+| `-Pn`  | Assume host is alive         |
+| `-n`   | No DNS lookups               |
+| `-sS`  | SYN (Stealth) scan           |
+| `-p-`  | Scan all TCP ports (1-65535) |
+
+nmap -Pn -n -sS -p- target
+
+| Service | Typical Port | Actual Port |
+| ------- | ------------ | ----------- |
+| HTTP    | 80           | 8080        |
+| SSH     | 22           | 2222        |
+| SQL     | 1433         | 51433       |
+
+nmap -Pn -sC -sV -O target
+| Option | Meaning                 |
+| ------ | ----------------------- |
+| `-Pn`  | Assume host is up       |
+| `-sC`  | Run default NSE scripts |
+| `-sV`  | Detect service versions |
+| `-O`   | Detect operating system |
+
