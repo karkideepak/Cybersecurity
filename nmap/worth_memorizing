@@ -1,0 +1,12 @@
+Fast Enterprise Recon
+nmap -Pn -n -T4 --top-ports 1000 target
+Full TCP Scan
+nmap -Pn -n -sS -p- target
+Full Enumeration
+nmap -Pn -sC -sV -O target
+SMB Enumeration
+nmap -p445 --script smb-enum-shares,smb-enum-users target
+Web Enumeration
+nmap -p80,443 -sV --script http-enum,http-title target
+SSL Assessment
+nmap --script ssl-cert,ssl-enum-ciphers -p443 target
